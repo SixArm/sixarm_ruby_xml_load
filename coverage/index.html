@@ -23,14 +23,14 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2012-03-13T17:57:49-07:00">2012-03-13T17:57:49-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2012-03-15T13:42:49-07:00">2012-03-15T13:42:49-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">31.58%</span></span>
+    (<span class="covered_percent"><span class="red">31.82%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -41,9 +41,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>1</b> files in total.
-    <b>19</b> relevant lines. 
-    <span class="green"><b>6</b> lines covered</span> and
-    <span class="red"><b>13</b> lines missed </span>
+    <b>22</b> relevant lines. 
+    <span class="green"><b>7</b> lines covered</span> and
+    <span class="red"><b>15</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -61,11 +61,11 @@
       
       <tr>
         <td class="strong"><a href="#27717be04f2e907fea034fa2b3f825e6b905036b" class="src_link" title="lib/sixarm_ruby_xml_load.rb">lib/sixarm_ruby_xml_load.rb</a></td>
-        <td class="red strong">31.58 %</td>
-        <td>74</td>
-        <td>19</td>
-        <td>6</td>
-        <td>13</td>
+        <td class="red strong">31.82 %</td>
+        <td>87</td>
+        <td>22</td>
+        <td>7</td>
+        <td>15</td>
         <td>0.3</td>
       </tr>
       
@@ -88,11 +88,11 @@
         <div class="source_table" id="27717be04f2e907fea034fa2b3f825e6b905036b">
   <div class="header">
     <h3>lib/sixarm_ruby_xml_load.rb</h3>
-    <h4><span class="red">31.58 %</span> covered</h4>
+    <h4><span class="red">31.82 %</span> covered</h4>
     <div>
-      <b>19</b> relevant lines. 
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>13</b> lines missed.</span>
+      <b>22</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
   </div>
   
@@ -114,7 +114,7 @@
         <li class="never" data-hits="" data-linenumber="3">
           
           
-          <code class="ruby">Please see README.rdoc</code>
+          <code class="ruby">Please see README</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="4">
@@ -132,7 +132,7 @@
         <li class="covered" data-hits="1" data-linenumber="6">
           <span class="hits">1</span>
           
-          <code class="ruby">require 'rexml/document' </code>
+          <code class="ruby">require 'sixarm_ruby_rexml'</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -474,70 +474,148 @@
         <li class="never" data-hits="" data-linenumber="63">
           
           
-          <code class="ruby">  # Sugar to load attributes hash from a file.</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="64">
           
           
-          <code class="ruby">  #</code>
+          <code class="ruby">  # Sugar to load attributes array from a file.</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="65">
           
           
-          <code class="ruby">  # @example</code>
+          <code class="ruby">  #</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
           
           
-          <code class="ruby">  #   XML.load_attributes('config.xml','userlist/user'){|attributes| pp attributes['first_name'] }</code>
+          <code class="ruby">  # @example</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="67">
           
           
+          <code class="ruby">  #   XML.load_attributes_array('config.xml','userlist/user'){|attributes| pp attributes['first_name'] }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="68">
+        <li class="covered" data-hits="1" data-linenumber="69">
           <span class="hits">1</span>
           
-          <code class="ruby">  def XML.load_attributes_hash(dirpath,xpath)</code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="69">
-          
-          
-          <code class="ruby">    XML.load_elements(dirpath,xpath){|elem|</code>
+          <code class="ruby">  def XML.load_attributes_array(dirpath,xpath)</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="70">
           
           
-          <code class="ruby">      yield elem.attributes.to_hash</code>
+          <code class="ruby">    XML.load_elements(dirpath,xpath){|elem|</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="71">
+        <li class="missed" data-hits="0" data-linenumber="71">
           
           
-          <code class="ruby">    }</code>
+          <code class="ruby">      yield elem.attributes.to_a</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="72">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    }</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="73">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="74">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="75">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="76">
+          
+          
+          <code class="ruby">  # Sugar to load attributes hash from a file.</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="77">
+          
+          
+          <code class="ruby">  #</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="78">
+          
+          
+          <code class="ruby">  # @example</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="79">
+          
+          
+          <code class="ruby">  #   XML.load_attributes_hash('config.xml','userlist/user'){|attributes| pp attributes['first_name'] }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="80">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="81">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def XML.load_attributes_hash(dirpath,xpath)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="82">
+          
+          
+          <code class="ruby">    XML.load_elements(dirpath,xpath){|elem|</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="83">
+          
+          
+          <code class="ruby">      yield elem.attributes.to_a_hash</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="84">
+          
+          
+          <code class="ruby">    }</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="85">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="86">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="87">
           
           
           <code class="ruby">end</code>

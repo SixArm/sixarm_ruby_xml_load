@@ -3,7 +3,7 @@
 Please see README
 =end
 
-require 'rexml/document' 
+require 'sixarm_ruby_rexml'
 
 module XML
 
@@ -64,7 +64,7 @@ module XML
   # Sugar to load attributes array from a file.
   #
   # @example
-  #   XML.load_attributes_hash('config.xml','userlist/user'){|attributes| pp attributes['first_name'] }
+  #   XML.load_attributes_array('config.xml','userlist/user'){|attributes| pp attributes['first_name'] }
 
   def XML.load_attributes_array(dirpath,xpath)
     XML.load_elements(dirpath,xpath){|elem|
@@ -80,7 +80,7 @@ module XML
 
   def XML.load_attributes_hash(dirpath,xpath)
     XML.load_elements(dirpath,xpath){|elem|
-      yield elem.attributes.to_hash
+      yield elem.attributes.to_a_hash
     }
   end
 

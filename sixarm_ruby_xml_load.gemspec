@@ -22,4 +22,6 @@ Gem::Specification.new do |s|
   s.files             = top_files + lib_files + test_files
   s.test_files        = test_files
 
+  s.add_dependency('sixarm_ruby_rexml', '>= 2.0.6')
+
 end
