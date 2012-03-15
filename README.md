@@ -1,4 +1,4 @@
-# SixArm.com » Ruby » XML#load methods
+# SixArm.com » Ruby » <br> XML#load methods to load documents, elements, attributes
 
 * Docs: <http://sixarm.com/sixarm_ruby_week/doc>
 * Repo: <http://github.com/sixarm/sixarm_ruby_week>
@@ -12,7 +12,8 @@ XML load methods:
   * XML.load_dir: load XML documents from one or more directory paths and file paths.
   * XML.load_elements: load XML elements from a file and with an xpath selector.
   * XML.load_attributes: load XML attributes from a file and with an xpath selector.
-  * XML.load_attributes_hash: load XML attributes from a file and with an xpath selector to a hash
+  * XML.load_attributes_array: load XML attributes into an array
+  * XML.load_attributes_hash: load XML attributes into a hash of name value pairs.
 
 For docs go to <http://sixarm.com/sixarm_ruby_week/doc>
 
@@ -32,9 +33,5 @@ Bundler:
 Require:
 
     require "sixarm_ruby_xml_load"
-
-
-
-
 
 
