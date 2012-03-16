@@ -2,17 +2,27 @@
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
-    <meta name="Content-Type" content="text/html; charset=utf-8" />
-<title>Documentation by YARD 0.6.4</title>
-<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
-<link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.7.5
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
 
 <script type="text/javascript" charset="utf-8">
   relpath = '';
   if (relpath != '') relpath += '/';
 </script>
-<script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
-<script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
 
   </head>
   <body>
@@ -31,57 +41,44 @@
 </div>
 
       <div id="search">
-  <a id="class_list_link" href="#">Class List</a>
-  <a id="method_list_link" href="#">Method List</a>
-  <a id ="file_list_link" href="#">File List</a>
+  
+    <a id="class_list_link" href="#">Class List</a>
+  
+    <a id="method_list_link" href="#">Method List</a>
+  
+    <a id="file_list_link" href="#">File List</a>
+  
 </div>
-
       <div class="clear"></div>
     </div>
     
     <iframe id="search_frame"></iframe>
     
-    <div id="content"><div id='filecontents'><h1>SixArm.com » Ruby » Unaccent gem</h1>
-<table>
-<tr><td valign="top">Author</td><td><p>
-Joel Parker Henderson, joelparkerhenderson@gmail.com
-</p>
-</td></tr>
-<tr><td valign="top">Copyright</td><td><p>
-Copyright &#169; 2006-2011 Joel Parker Henderson
-</p>
-</td></tr>
-<tr><td valign="top">License</td><td><p>
-See LICENSE.txt file
-</p>
-</td></tr>
-</table>
-<p>
-Replace a string&#8217;s accent characters with ASCII characters.
-</p>
-<p>
-Based on Perl Text::Unaccent from CPAN.
-</p>
-<p>
-@example French
-</p>
-<pre class="code">
-  str = &quot;déjà vu&quot;;
-  str.unaccent =&gt; &quot;deja vu&quot;;
-</pre>
-<p>
-@example Greek
-</p>
-<pre class="code">
-  str = &quot;νέα&quot; (aka &quot;\x{03AD}\x{03BD}\x{03B1}&quot;)
-  str.unaccent =&gt; &quot;νεα&quot; (aka &quot;\x{03B5}\x{03BD}\x{03B1}&quot;)
-</pre>
+    <div id="content"><div id='filecontents'>
+<h1>SixArm.com » Ruby » XM#load methods</h1>
+<table class="rdoc-list"><tr><td class="rdoc-term"><p>Author</p></td>
+<td>
+<p>Joel Parker Henderson, joel@joelparkerhenderson.com</p>
+</td></tr><tr><td class="rdoc-term"><p>Copyright</p></td>
+<td>
+<p>Copyright © 2006-2013 Joel Parker Henderson</p>
+</td></tr><tr><td class="rdoc-term"><p>License</p></td>
+<td>
+<p>See LICENSE.txt file</p>
+</td></tr></table>
+
+<p>Methods:</p>
+
+<pre class="code ruby"><code>* XML.load_dir: load XML documents from one or more directory paths and file paths.
+* XML.load_elements: load XML elements from a file and with an xpath selector.
+* XML.load_attributes: load XML attributes from a file and with an xpath selector.
+* XML.load_attributes_hash: load XML attributes from a file and with an xpath selector to a hash</code></pre>
 </div></div>
     
     <div id="footer">
-  Generated on Sat Feb 12 16:22:52 2011 by 
+  Generated on Fri Mar 16 16:00:21 2012 by 
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.6.4 (ruby-1.9.2).
+  0.7.5 (ruby-1.9.3).
 </div>
 
   </body>

@@ -13,42 +13,42 @@ describe XML do
 
   describe ".load_dir_files" do
 
-    it "load directory files" do
+    it "loads" do
       dirpath=TESTPATH + 'test_*.xml'
       expect=[(TESTPATH + 'test_1.xml').to_s, (TESTPATH + 'test_2.xml').to_s]
       actual=Dir[dirpath].sort
-      assert_equal(expect,actual,"Dir[#{dirpath}] expects test data files")
+      actual.must_equal expect
     end
 
   end
 
   describe ".load_dir" do
 
-    it "" do
+    it "loads" do
       dirpath=TESTPATH + 'test_*.xml'
       expect="abcdef"
       actual=''
       XML.load_dir(dirpath){|doc| doc.elements.each('foo/bar'){|e| actual+=e.attributes['x']}}
-      assert_equal(expect,actual,'XML.load_dir')
+      actual.must_equal expect
     end
 
   end
 
   describe ".load_elements" do
 
-    it "" do
+    it "loads" do
       dirpath=TESTPATH + 'test_*.xml'
       expect="<bar x='a'/><bar x='b'/><bar x='c'/><bar x='d'/><bar x='e'/><bar x='f'/>"
       actual=''
       XML.load_elements(dirpath,'foo/bar'){|elem| actual+=elem.to_s }
-      assert_equal(expect,actual,'XML.load_elements')
+      actual.must_equal expect
     end
 
   end
 
   describe ".load_attributes" do
 
-    it "" do
+    it "loads" do
       dirpath=TESTPATH + 'test_*.xml'
       expect=[["x", "a"], ["x", "b"], ["x", "c"], ["x", "d"], ["x", "e"], ["x", "f"]]
       actual=[]
@@ -57,14 +57,14 @@ describe XML do
           actual << [attribute[0], attribute[1]]
         }
       }  
-      assert_equal(expect,actual,'XML.load_attributes')
+      actual.must_equal expect
     end
 
   end
 
   describe ".load_attributes_hash" do
 
-    it "" do
+    it "loads" do
       dirpath=TESTPATH + 'test_*.xml'
       expect=[{"x"=>"a"}, {"x"=>"b"}, {"x"=>"c"}, {"x"=>"d"}, {"x"=>"e"}, {"x"=>"f"}]
       actual=[]
@@ -72,6 +72,7 @@ describe XML do
         actual << attributes_hash
       }
       assert_equal(expect,actual,'XML.load_attributes_hash')
+      actual.must_equal expect
     end
 
   end
