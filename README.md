@@ -35,7 +35,7 @@ Require:
     require "sixarm_ruby_xml_load"
 
 
-## High Security (Optional)
+## Install with high security (optional)
 
 To enable high security	for all	our gems:
 
@@ -80,4 +80,4 @@ This license is for the included software that is created by SixArm;
 some of the included software may have its own licenses, copyrights, 
 authors, etc. and these do take precedence over the SixArm license.
 
-Copyright (c) 2005-2013 Joel Parker Henderson
+Copyright (c) 2005-2012 Joel Parker Henderson
