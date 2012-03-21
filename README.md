@@ -1,7 +1,7 @@
 # SixArm.com » Ruby » <br> XML#load methods to load documents, elements, attributes
 
-* Docs: <http://sixarm.com/sixarm_ruby_week/doc>
-* Repo: <http://github.com/sixarm/sixarm_ruby_week>
+* Docs: <http://sixarm.com/sixarm_ruby_xml_load/doc>
+* Repo: <http://github.com/sixarm/sixarm_ruby_xml_load>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
 
@@ -15,27 +15,27 @@ XML load methods:
   * XML.load_attributes_array: load XML attributes into an array
   * XML.load_attributes_hash: load XML attributes into a hash of name value pairs.
 
-For docs go to <http://sixarm.com/sixarm_ruby_week/doc>
+For docs go to <http://sixarm.com/sixarm_ruby_xml_load/doc>
 
 Want to help? We're happy to get pull requests.
 
 
-## Quickstart
+## Install quickstart
 
 Install:
 
-    gem install sixarm_xml_load
+    gem install sixarm_ruby_xml_load
 
 Bundler:
 
-    gem "sixarm_ruby_xml_load", "=2.1.0"
+    gem "sixarm_ruby_xml_load", "~>2.1.0"
 
 Require:
 
     require "sixarm_ruby_xml_load"
 
 
-## Install with high security (optional)
+## Install with security (optional)
 
 To enable high security	for all	our gems:
 
@@ -45,7 +45,7 @@ To enable high security	for all	our gems:
 
 To install with high security:
 
-    gem install sixarm_ruby_alpha_bravo --test --trust-policy HighSecurity
+    gem install sixarm_ruby_xml_load --test --trust-policy HighSecurity
 
 
 ## Changes
