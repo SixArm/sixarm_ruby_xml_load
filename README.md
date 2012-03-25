@@ -1,6 +1,7 @@
 # SixArm.com » Ruby » <br> XML#load methods to load documents, elements, attributes
 
-* Docs: <http://sixarm.com/sixarm_ruby_xml_load/doc>
+* Doc: <http://sixarm.com/sixarm_ruby_xml_load/doc>
+* Gem: <http://rubygems.org/gems/sixarm_ruby_xml_load>
 * Repo: <http://github.com/sixarm/sixarm_ruby_xml_load>
 * Email: Joel Parker Henderson, <joel@sixarm.com>
 
