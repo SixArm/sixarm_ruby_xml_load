@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
-require 'minitest/autorun'
-require 'simplecov'
+require "minitest/autorun"
+require "simplecov"
 SimpleCov.start
-require 'sixarm_ruby_xml_load'
-require 'pathname'
+require "sixarm_ruby_xml_load"
+require "pathname"
 
 describe XML do
 
