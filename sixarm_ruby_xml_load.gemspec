@@ -3,7 +3,7 @@
 Gem::Specification.new do |s|
 
   s.name              = "sixarm_ruby_xml_load"
-  s.summary           = "SixArm.com » Ruby » XML#load methods"
+  s.summary           = "SixArm.com → Ruby → XML#load methods"
   s.description       = "XML#load methods to easily load and parse XML"
   s.version           = "2.1.1"
 
